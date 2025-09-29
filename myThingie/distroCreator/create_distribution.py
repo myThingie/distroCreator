@@ -2,6 +2,7 @@ import scipy
 import numpy
 
 class distroCreator():
+    # Maybe some good other comments make more sense to the reader. let's add them here!
     def __init__(self):
         self.distro = None
         self._alpha_param = None
@@ -40,3 +41,4 @@ class distroCreator():
             from scipy.stats import beta
             self.distro = beta(self._alpha_param, self._beta_param)
         return self.distro
+
